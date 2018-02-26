@@ -1,0 +1,29 @@
+/*global $,document*/
+$(document).ready(function()
+{ 
+    $(".text").hide(); 
+    $("div").animate({top:'200px'},1000);
+    $("div").animate({height:'255px'},1000,function()
+    {
+        $("h1").fadeIn(1000,function()
+        {
+            $(".text").show(1000,function()
+            {
+                 $(".text").animate({height:'20px'},1000,function()
+                {
+                 $("p").fadeIn(1000,function()      
+                {
+                $("button").animate({right:'0'},1000,function()
+                {
+                $(".check").animate({left:'0'},1000,function()
+                {
+                         
+                });  
+                    $("span").animate({left:'0'},1000);
+                });
+                    });
+                });
+            });
+        });
+    });
+});
